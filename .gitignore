@@ -1,0 +1,8 @@
+/py378
+/.ipynb_checkpoints
+/.idea
+/__pycache__
+
+*.ipynb
+*.tsv
+
