@@ -114,7 +114,7 @@ def test_preprocessing_feature_code_2(test_df_path, test_proc_save_path, stats_d
         # Abs Mean Diff evaluation
         chunk[MAX_FEATURE_2_ABS_MEAN_DIFF] = chunk.lookup(max_id.index, max_id) - stats_dict[MEAN][max_id].values
 
-        # Dataframe with stanfardize features
+        # Dataframe with standardized features
         chunk = pd.concat([chunk[[ID_JOB, MAX_FEATURE_2_INDEX, MAX_FEATURE_2_ABS_MEAN_DIFF]],
                            norm_func(chunk[job_features], stats_dict)], axis=1)
 
